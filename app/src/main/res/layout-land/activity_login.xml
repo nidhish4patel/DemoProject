@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F44336"
+    tools:context="com.nidhi.demoproject.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_mode_comment_white_24dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:fontFamily="@string/font_family"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:text="@string/login_title"
+    android:textSize="@dimen/textsize28" />
+
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="monospace"
+        android:drawableLeft="@mipmap/ic_person_black_18dp"
+        android:drawableStart="@mipmap/ic_person_black_18dp"
+        android:ems="10"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:hint="@string/username_title"
+        android:background="@drawable/background_two"
+        android:maxLength="15"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_https_black_24dp"
+        android:drawableStart="@mipmap/ic_https_black_24dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:hint="@string/password_title"
+        android:background="@drawable/background_two"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:fontFamily="monospace"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/backgroung_one"
+            android:fontFamily="monospace"
+            android:text="@string/signIn_button"
+            style="?android:attr/buttonBarStyle"/>
+
+        <Button
+            android:id="@+id/button_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="15sp"
+            android:background="@drawable/backgroung_one"
+            android:fontFamily="monospace"
+            android:text="@string/register_button"
+            style="?android:attr/buttonBarStyle"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@string/font_family"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/Forgot_password"
+        android:textSize="@dimen/textsize14" />
+
+</LinearLayout>

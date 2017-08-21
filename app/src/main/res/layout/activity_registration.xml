@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    android:orientation="vertical"
+    tools:context="com.nidhi.demoproject.RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textsize28"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/registration_text" />
+
+
+
+    <EditText
+        android:id="@+id/editText_createusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:background="@drawable/background_two"
+        android:drawableLeft="@mipmap/ic_person_black_18dp"
+        android:drawableStart="@mipmap/ic_person_black_18dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Username"
+        android:layout_margin="10dp"
+        android:paddingTop="20dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+       />
+
+    <EditText
+        android:id="@+id/et_createemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_local_post_office_black_24dp"
+        android:drawableStart="@mipmap/ic_local_post_office_black_24dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/background_two"
+        android:fontFamily="monospace"
+        android:hint="EnterEmail"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:id="@+id/editText_createphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:drawableLeft="@mipmap/ic_local_phone_black_24dp"
+        android:drawableStart="@mipmap/ic_local_phone_black_24dp"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:background="@drawable/background_two"
+        android:hint="Enter Phone Number"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+    <EditText
+    android:id="@+id/editText_createpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_two"
+    android:ems="10"
+    android:drawableLeft="@mipmap/ic_https_black_24dp"
+    android:drawableStart="@mipmap/ic_https_black_24dp"
+    android:fontFamily="monospace"
+    android:inputType="textPersonName"
+    android:hint="Enter Password"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    android:paddingRight="10dp"
+    />
+
+
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:layout_margin="10dp"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:background="@drawable/backgroung_one"
+        style="?android:attr/buttonBarStyle"/>
+
+
+
+
+</LinearLayout>
