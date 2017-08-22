@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 
 import com.nidhi.demoproject.R;
+import com.nidhi.demoproject.cache.CacheManager;
 import com.nidhi.demoproject.callbacks.IItemHandler;
 import com.nidhi.demoproject.common.AppPreferences;
 import com.nidhi.demoproject.common.Item;
@@ -29,7 +30,6 @@ import java.net.MalformedURLException;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 
-import Cache.CacheManager;
 
 public class HTTPTask {
 
